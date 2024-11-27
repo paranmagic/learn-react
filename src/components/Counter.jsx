@@ -11,8 +11,10 @@ const Counter = () => {
   }
 
   const handleDecrease = () => {
-    setCount(count - 1);
+    setCount((prev) => prev - 1)
   }
+
+  
 
   return (
     <div style={{'border': "1px solid red", padding: '8px'}}>
